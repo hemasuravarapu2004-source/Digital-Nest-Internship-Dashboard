@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Internship at Digital Nest - Dashboard</title>
+<title>Digital Nest Internship Dashboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
@@ -388,8 +388,8 @@
 
 <header>
   <div class="eyebrow">Internship & Sales · 90-day sprint</div>
-  <h1>Recruitment Metrics Dashboard</h1>
-  <p>1000+ resumes · 340 calls · 9 hires · ₹2.78L revenue</p>
+  <h1>Digital Nest Internship Dashboard</h1>
+  <p>1000+ resumes · 340 calls · 11 hires · ₹4.78L revenue</p>
 </header>
 
 <!-- HERO POWER METRIC -->
@@ -403,11 +403,11 @@
       <div class="arrow">→</div>
       <div class="funnel-step"><div class="num">~80</div><div class="lbl">Interviewed</div></div>
       <div class="arrow">→</div>
-      <div class="funnel-step"><div class="num">9</div><div class="lbl">Hired</div></div>
+      <div class="funnel-step"><div class="num">11</div><div class="lbl">Hired</div></div>
     </div>
   </div>
   <div class="hero-badge">
-    <div class="pct">0.9%</div>
+    <div class="pct">1.1%</div>
     <div class="sub">Final Conversion</div>
   </div>
 </div>
@@ -415,9 +415,9 @@
 <!-- KPI STRIP -->
 <div class="kpi-row">
   <div class="kpi"><div class="accent-bar" style="background:var(--accent)"></div><div class="val">1,000+</div><div class="klbl">Resumes Screened</div></div>
-  <div class="kpi"><div class="accent-bar" style="background:var(--accent3)"></div><div class="val">9</div><div class="klbl">Total Hires</div></div>
+  <div class="kpi"><div class="accent-bar" style="background:var(--accent3)"></div><div class="val">11</div><div class="klbl">Total Hires</div></div>
   <div class="kpi"><div class="accent-bar" style="background:var(--accent2)"></div><div class="val">90</div><div class="klbl">Days Duration</div></div>
-  <div class="kpi"><div class="accent-bar" style="background:var(--accent4)"></div><div class="val">₹2.78L</div><div class="klbl">Revenue Generated</div></div>
+  <div class="kpi"><div class="accent-bar" style="background:var(--accent4)"></div><div class="val">₹4.78L</div><div class="klbl">Revenue Generated</div></div>
   <div class="kpi"><div class="accent-bar" style="background:#38bdf8"></div><div class="val">340</div><div class="klbl">Sales Calls Made</div></div>
   <div class="kpi"><div class="accent-bar" style="background:#a78bfa"></div><div class="val">25:1</div><div class="klbl">Employee-to-HR Ratio</div></div>
 </div>
@@ -541,14 +541,14 @@ buildFunnel('recruitFunnel', [
   { label: 'Total Screened', val: 1000, display: '1,000+' },
   { label: 'Shortlisted', val: 250, display: '~250' },
   { label: 'Interviewed', val: 80, display: '~80' },
-  { label: 'Hired', val: 9, display: '9' },
+  { label: 'Hired', val: 11, display: '11' },
 ], ['#6c63ff','#38bdf8','#f7971e','#43e97b']);
 
 buildFunnel('salesFunnel', [
   { label: 'Calls Made', val: 340, display: '340' },
   { label: 'Registrations', val: 50, display: '50' },
   { label: 'Attendees', val: 20, display: '20' },
-  { label: 'Conversions', val: 1, display: '1' },
+  { label: 'Conversions', val: 2, display: '2' },
 ], ['#6c63ff','#ff6584','#f7971e','#43e97b']);
 
 // ---- PARTICIPATION BARS ----
@@ -601,7 +601,7 @@ new Chart(document.getElementById('conversionBar'), {
     labels: ['Shortlist\nRate', 'Interview\nRate', 'Interview→\nHire', 'Overall\nConversion'],
     datasets: [{
       label: 'Rate (%)',
-      data: [25, 32, 11.25, 0.9],
+      data: [25, 32, 13.75, 1.1],
       backgroundColor: ['#6c63ff','#38bdf8','#f7971e','#43e97b'],
       borderRadius: 6,
       borderSkipped: false,
@@ -622,7 +622,7 @@ new Chart(document.getElementById('salesRates'), {
   data: {
     labels: ['Call→Reg', 'Reg→Attend', 'Attend→Convert', 'Overall'],
     datasets: [{
-      data: [14.7, 40, 5, 0.29],
+      data: [14.7, 40, 10, 0.59],
       backgroundColor: ['#6c63ff','#ff6584','#f7971e','#43e97b'],
       borderRadius: 6,
       borderSkipped: false,
